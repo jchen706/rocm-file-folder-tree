@@ -1,0 +1,295 @@
+.
+├── amdgcn
+│   └── bitcode
+├── bin
+├── etc
+│   └── pki
+│       └── entitlement
+├── hip
+│   ├── bin
+│   ├── cmake
+│   │   └── FindHIP
+│   ├── include
+│   │   └── hip
+│   │       ├── amd_detail
+│   │       └── nvidia_detail
+│   └── lib
+│       └── cmake
+│           ├── hip
+│           └── hip-lang
+├── hsa
+│   ├── hsa
+│   │   ├── include
+│   │   │   └── hsa -> ../../include/hsa
+│   │   └── lib
+│   ├── include
+│   │   └── hsa -> ../../include/hsa
+│   └── lib
+├── include
+│   ├── hip
+│   │   ├── amd_detail
+│   │   ├── hcc_detail -> amd_detail
+│   │   ├── nvcc_detail -> nvidia_detail
+│   │   └── nvidia_detail
+│   ├── hsa
+│   ├── rocprofiler
+│   └── roctracer
+│       └── ext
+├── lib
+│   ├── cmake
+│   │   ├── hip
+│   │   │   └── FindHIP
+│   │   └── hip-lang
+│   ├── rocprofiler
+│   └── roctracer
+├── lib64
+│   └── cmake
+│       └── hsakmt
+├── libexec
+│   └── rocprofiler
+├── llvm
+│   ├── bin
+│   ├── include
+│   │   ├── c++
+│   │   │   └── v1
+│   │   │       ├── __algorithm
+│   │   │       ├── __bit
+│   │   │       ├── __charconv
+│   │   │       ├── __chrono
+│   │   │       ├── __compare
+│   │   │       ├── __concepts
+│   │   │       ├── __coroutine
+│   │   │       ├── __debug_utils
+│   │   │       ├── experimental
+│   │   │       ├── ext
+│   │   │       ├── __filesystem
+│   │   │       ├── __format
+│   │   │       ├── __functional
+│   │   │       ├── __fwd
+│   │   │       ├── __ios
+│   │   │       ├── __iterator
+│   │   │       ├── __memory
+│   │   │       ├── __numeric
+│   │   │       ├── __random
+│   │   │       ├── __ranges
+│   │   │       ├── __string
+│   │   │       ├── __support
+│   │   │       │   ├── android
+│   │   │       │   ├── fuchsia
+│   │   │       │   ├── ibm
+│   │   │       │   ├── musl
+│   │   │       │   ├── newlib
+│   │   │       │   ├── openbsd
+│   │   │       │   ├── solaris
+│   │   │       │   ├── win32
+│   │   │       │   └── xlocale
+│   │   │       ├── __thread
+│   │   │       ├── __tuple
+│   │   │       ├── __type_traits
+│   │   │       ├── __utility
+│   │   │       └── __variant
+│   │   ├── clang
+│   │   │   ├── Analysis
+│   │   │   │   ├── Analyses
+│   │   │   │   ├── DomainSpecific
+│   │   │   │   ├── FlowSensitive
+│   │   │   │   │   └── Models
+│   │   │   │   └── Support
+│   │   │   ├── APINotes
+│   │   │   ├── ARCMigrate
+│   │   │   ├── AST
+│   │   │   ├── ASTMatchers
+│   │   │   │   └── Dynamic
+│   │   │   ├── Basic
+│   │   │   ├── CodeGen
+│   │   │   ├── Config
+│   │   │   ├── CrossTU
+│   │   │   ├── DirectoryWatcher
+│   │   │   ├── Driver
+│   │   │   ├── Edit
+│   │   │   ├── ExtractAPI
+│   │   │   │   └── Serialization
+│   │   │   ├── Format
+│   │   │   ├── Frontend
+│   │   │   ├── FrontendTool
+│   │   │   ├── Index
+│   │   │   ├── IndexSerialization
+│   │   │   ├── Interpreter
+│   │   │   ├── Lex
+│   │   │   ├── Parse
+│   │   │   ├── Rewrite
+│   │   │   │   ├── Core
+│   │   │   │   └── Frontend
+│   │   │   ├── Sema
+│   │   │   ├── Serialization
+│   │   │   ├── StaticAnalyzer
+│   │   │   │   ├── Checkers
+│   │   │   │   ├── Core
+│   │   │   │   │   ├── BugReporter
+│   │   │   │   │   └── PathSensitive
+│   │   │   │   └── Frontend
+│   │   │   ├── Support
+│   │   │   ├── Testing
+│   │   │   └── Tooling
+│   │   │       ├── ASTDiff
+│   │   │       ├── Core
+│   │   │       ├── DependencyScanning
+│   │   │       ├── Inclusions
+│   │   │       ├── Refactoring
+│   │   │       │   ├── Extract
+│   │   │       │   └── Rename
+│   │   │       ├── Syntax
+│   │   │       └── Transformer
+│   │   ├── clang-c
+│   │   ├── lld
+│   │   │   └── Common
+│   │   ├── llvm
+│   │   │   ├── ADT
+│   │   │   ├── Analysis
+│   │   │   │   └── Utils
+│   │   │   ├── AsmParser
+│   │   │   ├── BinaryFormat
+│   │   │   │   └── ELFRelocs
+│   │   │   ├── Bitcode
+│   │   │   ├── Bitstream
+│   │   │   ├── CodeGen
+│   │   │   │   ├── GlobalISel
+│   │   │   │   ├── MIRParser
+│   │   │   │   └── PBQP
+│   │   │   ├── Config
+│   │   │   ├── DebugInfo
+│   │   │   │   ├── CodeView
+│   │   │   │   ├── DWARF
+│   │   │   │   ├── GSYM
+│   │   │   │   ├── MSF
+│   │   │   │   ├── PDB
+│   │   │   │   │   ├── DIA
+│   │   │   │   │   └── Native
+│   │   │   │   └── Symbolize
+│   │   │   ├── Debuginfod
+│   │   │   ├── Demangle
+│   │   │   ├── DWARFLinker
+│   │   │   ├── DWP
+│   │   │   ├── ExecutionEngine
+│   │   │   │   ├── JITLink
+│   │   │   │   └── Orc
+│   │   │   │       ├── Shared
+│   │   │   │       └── TargetProcess
+│   │   │   ├── FileCheck
+│   │   │   ├── Frontend
+│   │   │   │   ├── Directive
+│   │   │   │   ├── OpenACC
+│   │   │   │   └── OpenMP
+│   │   │   ├── FuzzMutate
+│   │   │   ├── InterfaceStub
+│   │   │   ├── IR
+│   │   │   ├── IRReader
+│   │   │   ├── LineEditor
+│   │   │   ├── Linker
+│   │   │   ├── LTO
+│   │   │   │   └── legacy
+│   │   │   ├── MC
+│   │   │   │   ├── MCDisassembler
+│   │   │   │   └── MCParser
+│   │   │   ├── MCA
+│   │   │   │   ├── HardwareUnits
+│   │   │   │   └── Stages
+│   │   │   ├── ObjCopy
+│   │   │   │   ├── COFF
+│   │   │   │   ├── ELF
+│   │   │   │   ├── MachO
+│   │   │   │   ├── wasm
+│   │   │   │   └── XCOFF
+│   │   │   ├── Object
+│   │   │   ├── ObjectYAML
+│   │   │   ├── Option
+│   │   │   ├── Passes
+│   │   │   ├── ProfileData
+│   │   │   │   └── Coverage
+│   │   │   ├── Remarks
+│   │   │   ├── Support
+│   │   │   │   ├── FileSystem
+│   │   │   │   ├── Solaris
+│   │   │   │   │   └── sys
+│   │   │   │   └── Windows
+│   │   │   ├── TableGen
+│   │   │   ├── Target
+│   │   │   │   └── GlobalISel
+│   │   │   ├── Testing
+│   │   │   │   ├── ADT
+│   │   │   │   └── Support
+│   │   │   ├── TextAPI
+│   │   │   ├── ToolDrivers
+│   │   │   │   ├── llvm-dlltool
+│   │   │   │   └── llvm-lib
+│   │   │   ├── Transforms
+│   │   │   │   ├── AggressiveInstCombine
+│   │   │   │   ├── Coroutines
+│   │   │   │   ├── InstCombine
+│   │   │   │   ├── Instrumentation
+│   │   │   │   ├── IPO
+│   │   │   │   ├── Scalar
+│   │   │   │   ├── Utils
+│   │   │   │   └── Vectorize
+│   │   │   ├── WindowsDriver
+│   │   │   ├── WindowsManifest
+│   │   │   ├── WindowsResource
+│   │   │   └── XRay
+│   │   ├── llvm-c
+│   │   │   └── Transforms
+│   │   └── x86_64-unknown-linux-gnu
+│   │       └── c++
+│   │           └── v1
+│   ├── lib
+│   │   ├── clang
+│   │   │   └── 16.0.0
+│   │   │       ├── bin
+│   │   │       ├── include
+│   │   │       │   ├── cuda_wrappers
+│   │   │       │   ├── fuzzer
+│   │   │       │   ├── openmp_wrappers
+│   │   │       │   ├── orc
+│   │   │       │   ├── ppc_wrappers
+│   │   │       │   ├── profile
+│   │   │       │   ├── sanitizer
+│   │   │       │   └── xray
+│   │   │       ├── lib
+│   │   │       │   └── x86_64-unknown-linux-gnu
+│   │   │       └── share
+│   │   ├── cmake
+│   │   │   ├── clang
+│   │   │   ├── lld
+│   │   │   └── llvm
+│   │   ├── libear
+│   │   ├── libscanbuild
+│   │   │   └── resources
+│   │   └── x86_64-unknown-linux-gnu
+│   ├── libexec
+│   └── share
+│       ├── clang
+│       ├── man
+│       │   └── man1
+│       ├── opt-viewer
+│       ├── scan-build
+│       └── scan-view
+├── rocprofiler
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── tool
+├── roctracer
+│   ├── include
+│   │   └── ext
+│   ├── lib
+│   └── tool
+├── share
+│   └── doc
+│       ├── rocprofiler-dev
+│       └── roctracer-dev
+└── var
+    ├── lib
+    │   └── rpm
+    └── tmp
+        └── dnf-jchen706-lse8fswr
+
+292 directories
